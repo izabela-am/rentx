@@ -22,5 +22,5 @@ export const invalidPasswords = [
   'michael',
   'ninja',
   'mustang',
-  'password1'
+  'password1',
 ];
