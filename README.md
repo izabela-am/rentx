@@ -1,5 +1,3 @@
-
-
 ## ASVS L1 Checklist
 All of the __required__ controls listed on ASVS L1 are going to be implemented in this application.
 
@@ -17,8 +15,7 @@ All of the __required__ controls listed on ASVS L1 are going to be implemented i
 
 - [X] 2.1.6. Verify that password change functionality requires the user's current and new password.
 
-- [X] 2.1.7. Verify that passwords submitted during account registration, login,
-and password change are checked against a set of breached passwords.
+- [X] 2.1.7. Verify that passwords submitted during account registration, login, and password change are checked against a set of breached passwords.
 
 - [X] 2.1.9. Verify that there are no password composition rules limiting the type of characters permitted. There should be no requirement for upper or lower case or numbers or special characters.
 
@@ -45,12 +42,6 @@ and password change are checked against a set of breached passwords.
 
 #### V3.1 Fundamental Session Management Security
 - [ ] Verify the application never reveals session tokens in URL parameters.
-
-- [ ] 
-
-- [ ] 
-
-- [ ] 
 
 #### V3.2 Session Binding
 - [X] Verify the application generates a new session token on user authentication.

@@ -5,7 +5,6 @@ import { AppError } from '../../../shared/errors/AppError';
 
 import authConfig from '../../../shared/config/auth';
 import { IUser, IUsersRepository } from '../infra/repository/interfaces';
-import e from 'express';
 
 interface IResponse {
   user: IUser;
