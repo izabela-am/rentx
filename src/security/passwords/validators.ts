@@ -64,6 +64,17 @@ function checkBlocklist(password: string): boolean {
  */
 function checkEntropy(password: string): boolean {
   // TODO: Implementar código aqui!!
-
+// TODO: Implementar código aqui!!
+  // rmaues.rocha
+  // Entropy é a possibilidade de uma senha ser validada quanto ao 
+  // tamanho de suas aleatoriedade ou incerteza
+  // Para fazer essa função precisa ter o tamanho da senha e do conjunto de 
+  // caracteres que vai ser usado para construir a senha e se faz o cálculo do
+  // conjunto de caracteres * tamanho da senha e vamos usar uma função de log
+  //
+  const tamanho_password: number = senha.length;
+  const conjunto_caracter: number = new Set(password).size
+  const entropia: number = math.log2(conjunto_caracter) * tamanho_password;
+  return entropia;
   return true;
 }
