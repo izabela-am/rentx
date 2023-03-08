@@ -60,8 +60,9 @@ function checkBlocklist(password: string): boolean {
  * @param password The password that will be validated
  * @returns True if entropy reaches the threshold
  */
+
+//Tentativa de PR
 function checkEntropy(password: string): boolean {
-  // TODO: Implementar código aqui!!
      const passwordChars = math.log2 (password.length * 95)
 
      if (passwordChars <=10) {
