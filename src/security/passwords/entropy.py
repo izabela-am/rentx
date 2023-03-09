@@ -8,4 +8,12 @@ def entropy(senha):
     tamanho_senha = len(senha)
     tamanho_conjunto = len(set(senha))
     entropia = math.log2(tamanho_conjunto) * tamanho_senha
-    return entropia
+    if entropia >= 20:
+        print(f"O valor de entropia para a senha é {entropia} é adequado.")
+        return entropy
+    else:
+        print(f"O valor {entropia} apresenta um valor menor que o adequado.")
+
+
+senha = input("Digitie uma senha: ")
+entropy(senha)
