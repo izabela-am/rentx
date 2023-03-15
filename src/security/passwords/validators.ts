@@ -73,15 +73,13 @@ function checkEntropy(password: string): boolean {
   //
   // A entropia que é aceita como mínima no ASVS 2.7.6 é de 20 bits
   //
-  const tamanho_password: number = senha.length;
+  const tamanho_password: number = password.length;
   const conjunto_caracter: number = new Set(password).size
   const entropia: number = math.log2(conjunto_caracter) * tamanho_password;
   // Precisa comparar a entropia para saner se é forte e saber se retorna true
   // ou false
-  if (entropia >= 20){
+  if (entropia >= 60){
     return true;
   }
-  else {
-    return false
-  }
+  return false
 }

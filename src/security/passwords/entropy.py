@@ -6,9 +6,9 @@ import random
 
 def entropy(senha):
     tamanho_senha = len(senha)
-    tamanho_conjunto = len(set(senha))
+    tamanho_conjunto = 128
     entropia = math.log2(tamanho_conjunto) * tamanho_senha
-    if entropia >= 20:
+    if entropia >= 60:
         print(f"O valor de entropia para a senha é {entropia} é adequado.")
         return entropy
     else:
