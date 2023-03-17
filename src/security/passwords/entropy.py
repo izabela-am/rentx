@@ -1,19 +1,19 @@
 ''' Function to calculate te entropy  '''
 
 import math
-import random
+## import random
 
 
 def entropy(senha):
     tamanho_senha = len(senha)
-    tamanho_conjunto = len(set(senha))
+    ##    tamanho_conjunto = len(set(senha))
+    tamanho_conjunto = 95
     entropia = math.log2(tamanho_conjunto**tamanho_senha)
     if entropia >= 60:
         print(f"O valor de entropia para a senha é {entropia} é adequado.")
-        print(tamanho_conjunto)
-        return entropy
+        return entropia
     else:
-    print(f"O valor {entropia} apresenta um valor menor que o adequado.")
+        print(f"O valor {entropia} apresenta um valor menor que o adequado.")
 
 
 senha = input("Digitie uma senha: ")
