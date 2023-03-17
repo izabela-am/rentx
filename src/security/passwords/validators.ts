@@ -75,7 +75,7 @@ function checkEntropy(password: string): boolean {
   //
   const tamanho_password: number = password.length;
   const conjunto_caracter: number = new Set(password).size
-  const entropia: number = math.log2(conjunto_caracter) * tamanho_password;
+  const entropia: number = math.log2(conjunto_caracter ** tamanho_password);
   // Precisa comparar a entropia para saner se é forte e saber se retorna true
   // ou false
   if (entropia >= 60){
