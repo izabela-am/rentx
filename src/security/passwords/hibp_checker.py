@@ -4,6 +4,7 @@ import sys
 import hashlib
 import requests
 
+
 ## Validando se uma senha ja tem leak
 def hashSenha(senha):
     sha1Senha = hashlib.sha1(senha.encode('utf-8')).hexdigest().upper()
@@ -11,6 +12,7 @@ def hashSenha(senha):
     ## Endereco da API
     url = f'https://api.pwnedpasswords.com/range/{inicio}'
     res = requests.get(url)
+    print(inicio)
     ## Validando a resposta
     if res.status_code != 200:
         raise RuntimeError(f"Algo deu errado, veja se a API está ok")
